@@ -3,7 +3,7 @@ require('html-loader!../index.html');
 
 import { default as Web3} from 'web3';
 import { default as contract } from 'truffle-contract';
-import { default as namehash } from 'eth-ens-namehash';
+import { default as namehash } from 'puffs-ens-namehash';
 import { default as _ } from 'underscore';
 import { default as $ } from 'jquery';
 import { keccak_256 as sha3 } from 'js-sha3';
@@ -13,7 +13,7 @@ import subdomainregistrar_artifacts from '../../build/contracts/EthRegistrarSubd
 import ens_artifacts from '../../build/contracts/ENS.json';
 import domainnames from './domains.json';
 
-const tld = "eth";
+const tld = "puffs";
 const referrerAddress = "0x0904Dac3347eA47d208F3Fd67402D039a3b99859";
 
 var SubdomainRegistrar = contract(subdomainregistrar_artifacts);
@@ -66,7 +66,7 @@ window.App = {
       await this.buildInstances();
 
       // Get the address of the current public resolver
-      self.resolverAddress = await self.ens.resolver(namehash.hash('resolver.eth'));
+      self.resolverAddress = await self.ens.resolver(namehash.hash('resolver.puffs'));
     } catch(e) {
       console.log(e);
       $("#wrongnetworkmodal").modal('show');
@@ -193,10 +193,10 @@ window.App = {
 
 window.addEventListener('load', async function() {
   // Checking if Web3 has been injected by the browser (Mist/MetaMask)
-  if (typeof ethereum !== 'undefined') {
+  if (typeof puffscoin !== 'undefined') {
     // Use Mist/MetaMask's provider
-    await ethereum.enable();
-    window.web3 = new Web3(ethereum);
+    await puffscoin.enable();
+    window.web3 = new Web3(puffscoin);
     window.readOnly = false;
   } else {
     window.web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/Rg6BrBl8vIqJBc7AlL9h"));
