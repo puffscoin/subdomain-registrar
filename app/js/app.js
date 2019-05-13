@@ -9,7 +9,7 @@ import { default as $ } from 'jquery';
 import { keccak_256 as sha3 } from 'js-sha3';
 import { default as Promise } from 'bluebird';
 
-import subdomainregistrar_artifacts from '../../build/contracts/EthRegistrarSubdomainRegistrar.json';
+import subdomainregistrar_artifacts from '../../build/contracts/PuffsRegistrarSubdomainRegistrar.json';
 import ens_artifacts from '../../build/contracts/ENS.json';
 import domainnames from './domains.json';
 
