@@ -1,5 +1,5 @@
 {
-  "contractName": "EthRegistrarSubdomainRegistrar",
+  "contractName": "PuffsRegistrarSubdomainRegistrar",
   "abi": [
     {
       "constant": true,
