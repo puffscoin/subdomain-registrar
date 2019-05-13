@@ -30,7 +30,7 @@ import "./AbstractSubdomainRegistrar.sol";
  * register are controlled by this registrar, since calls to `register` will
  * fail if this is not the case.
  */
-contract EthRegistrarSubdomainRegistrar is AbstractSubdomainRegistrar {
+contract PuffsRegistrarSubdomainRegistrar is AbstractSubdomainRegistrar {
 
     struct Domain {
         string name;
