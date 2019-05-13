@@ -42,7 +42,7 @@ npm run dev
 
 ## Operation
 
-`SubdomainRegistrar` implements a contract that takes ownership of (multiple) .eth domains, and sells subdomains to users for a simple one-time fee. When users register a subdomain, it is automatically configured with a default resolver and pointed at their account. This permits easy one-transaction claiming and assignment of an ENS domain for users, significantly improving the ENS user-experience.
+`SubdomainRegistrar` implements a contract that takes ownership of (multiple) .puffs domains, and sells subdomains to users for a simple one-time fee. When users register a subdomain, it is automatically configured with a default resolver and pointed at their account. This permits easy one-transaction claiming and assignment of an ENS domain for users, significantly improving the ENS user-experience.
 
 A variety of frontends can be built to interact with the subdomain registrar; a simple implementation is provided in this repository. Domain owners may set a 'commission rate', which is a percentage fee that is sent to the address the frontend nominates. This can be any amount, but frontends are free to set criteria for inclusion or prioritisation based on the fee paid.
 
@@ -50,10 +50,10 @@ There is no functionality in the contract for listing or querying domains that a
 
 ### Adding a domain
 
-Any .eth domain owner may use this contract by:
+Any .puffs domain owner may use this contract by:
 
  1. Transferring ownership of the Deed to the deployed contract.
- 2. Calling `configureDomain(name, price, referralFeePPM)`, where `name` is the name of the domain (without .eth), price is the price in wei to charge for a subdomain registration, and `referralFeePPM` is the referral fee to offer to frontends, in parts-per-million.
+ 2. Calling `configureDomain(name, price, referralFeePPM)`, where `name` is the name of the domain (without .puffs), price is the price in wei to charge for a subdomain registration, and `referralFeePPM` is the referral fee to offer to frontends, in parts-per-million.
  3. Getting the new domain whitelisted with frontends so users can buy it.
 
 Note that this process is IRREVOCABLE! For the security of customers, once you have transferred your domain to the subdomain registrar, you cannot claim it back except under very limited circumstances (see below).
