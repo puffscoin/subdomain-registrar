@@ -1,14 +1,14 @@
 pragma solidity ^0.5.0;
 
 import "@ensdomains/ens/contracts/HashRegistrar.sol";
-import "@ensdomains/ethregistrar/contracts/BaseRegistrar.sol";
+import "@ensdomains/puffsregistrar/contracts/BaseRegistrar.sol";
 
 contract SubdomainMigrationRegistrar {
 
     bytes32 constant public TLD_NODE = 0x93cdeb708b7545dc668eb9280176169d1c33cfd8ed6f04690a0bcc88a93fc4ae;
 
     HashRegistrar public hashRegistrar;
-    BaseRegistrar public ethRegistrar;
+    BaseRegistrar public puffsRegistrar;
 
     address public previousRegistrar;
     address payable public newRegistrar;
@@ -22,12 +22,12 @@ contract SubdomainMigrationRegistrar {
         address _previousRegistrar,
         address payable _newRegistrar,
         HashRegistrar _hashRegistrar,
-        BaseRegistrar _ethRegistrar
+        BaseRegistrar _puffsRegistrar
     ) public {
         previousRegistrar = _previousRegistrar;
         newRegistrar = _newRegistrar;
         hashRegistrar = _hashRegistrar;
-        ethRegistrar = _ethRegistrar;
+        puffsRegistrar = _puffsRegistrar;
     }
 
     function () external payable { }
@@ -39,7 +39,7 @@ contract SubdomainMigrationRegistrar {
 
         hashRegistrar.transferRegistrars(label);
 
-        ethRegistrar.approve(newRegistrar, uint256(label));
+        puffsRegistrar.approve(newRegistrar, uint256(label));
 
         _owner.transfer(value);
 
