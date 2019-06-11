@@ -1,4 +1,4 @@
-var namehash = require('eth-ens-namehash');
+var namehash = require('puffs-ens-namehash');
 const sha3 = require('web3-utils').sha3;
 var Promise = require('bluebird');
 const { evm } = require('@ensdomains/test-utils');
@@ -19,7 +19,7 @@ async function registerOldNames(names, account, dhr, ens) {
     await evm.advanceTime(2 * DAYS + 1);
     await Promise.map(hashes, (hash) => dhr.finalizeAuction(hash, {from: account}));
     for(var name of names) {
-        assert.equal(await ens.owner(namehash.hash(name + '.eth')), account);
+        assert.equal(await ens.owner(namehash.hash(name + '.puffs')), account);
     }
 }
 
