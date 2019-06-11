@@ -182,7 +182,7 @@ window.App = {
 
     $(".domainname").text(subdomain + "." + domain.name + "." + tld);
     $("#registeringmodal").modal('show');
-    var tx = await registrarVersions[domain.version].register(domain, subdomain, web3.eth.accounts[0], referrerAddress, this.resolverAddress, info[1]);
+    var tx = await registrarVersions[domain.version].register(domain, subdomain, web3.puffs.accounts[0], referrerAddress, this.resolverAddress, info[1]);
     $("#puffsexplorer").attr("href", "http://puffsexplorer.leafycauldronapothecary.com" + tx.tx);
     $("#registeringmodal").modal('hide');
     $("#registeredmodal").modal('show');
