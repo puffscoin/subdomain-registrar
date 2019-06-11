@@ -1,14 +1,14 @@
 const ENS = artifacts.require("ENSRegistry");
 const SubdomainRegistrar = artifacts.require("SubdomainRegistrar");
-const EthRegistrarSubdomainRegistrar = artifacts.require("EthRegistrarSubdomainRegistrar");
+const PuffsRegistrarSubdomainRegistrar = artifacts.require("PuffsRegistrarSubdomainRegistrar");
 const SubdomainMigrationRegistrar = artifacts.require("SubdomainMigrationRegistrar");
-const EthRegistrar = artifacts.require("BaseRegistrarImplementation");
+const PuffsRegistrar = artifacts.require("BaseRegistrarImplementation");
 const HashRegistrar = artifacts.require("HashRegistrar");
 const TestResolver = artifacts.require("TestResolver");
 
 const utils = require('./helpers/Utils');
 
-var namehash = require('eth-ens-namehash');
+var namehash = require('puffs-ens-namehash');
 const sha3 = require('web3-utils').sha3;
 const { evm } = require('@ensdomains/test-utils');
 
@@ -19,7 +19,7 @@ contract('SubdomainMigrationRegistrar', function (accounts) {
     var dhr = null;
     var oldRegistrar = null;
     var resolver = null;
-    var ethregistrar = null;
+    var puffsregistrar = null;
     var finalRegistrar = null;
 
     before(async function () {
@@ -28,10 +28,10 @@ contract('SubdomainMigrationRegistrar', function (accounts) {
         dhr = await HashRegistrar.deployed();
         resolver = await TestResolver.deployed();
 
-        ethregistrar = await EthRegistrar.new(
+        puffsregistrar = await PuffsRegistrar.new(
             ens.address,
             dhr.address,
-            namehash.hash('eth'),
+            namehash.hash('puffs'),
             Math.floor(Date.now() / 1000) * 2
         );
     });
@@ -50,15 +50,15 @@ contract('SubdomainMigrationRegistrar', function (accounts) {
         assert.equal(domainInfo[2].toNumber(), 0);
         assert.equal(domainInfo[3].toNumber(), 100000);
 
-        await ens.setSubnodeOwner('0x0', sha3('eth'), ethregistrar.address);
+        await ens.setSubnodeOwner('0x0', sha3('puffs'), puffsregistrar.address);
 
-        finalRegistrar = await EthRegistrarSubdomainRegistrar.new(ens.address);
+        finalRegistrar = await PuffsRegistrarSubdomainRegistrar.new(ens.address);
 
         let migration = await SubdomainMigrationRegistrar.new(
             oldRegistrar.address,
             finalRegistrar.address,
             dhr.address,
-            ethregistrar.address
+            puffsregistrar.address
         );
 
         await oldRegistrar.stop();
@@ -72,7 +72,7 @@ contract('SubdomainMigrationRegistrar', function (accounts) {
         assert.equal(domainInfo[2].toNumber(), 0);
         assert.equal(domainInfo[3].toNumber(), 100000);
 
-        assert.equal(await ens.owner(namehash.hash('yolo.eth')), finalRegistrar.address);
+        assert.equal(await ens.owner(namehash.hash('yolo.puffs')), finalRegistrar.address);
     });
 
     it("should register subdomains after migration", async function () {
@@ -89,8 +89,8 @@ contract('SubdomainMigrationRegistrar', function (accounts) {
         assert.equal(tx.logs[0].args.referrer, accounts[2]);
 
         // Check the new owner gets their domain
-        assert.equal(await ens.owner(namehash.hash('foo.yolo.eth')), accounts[1]);
-        assert.equal(await ens.resolver(namehash.hash('foo.yolo.eth')), resolver.address);
-        assert.equal(await resolver.addr(namehash.hash('foo.yolo.eth')), accounts[1]);
+        assert.equal(await ens.owner(namehash.hash('foo.yolo.puffs')), accounts[1]);
+        assert.equal(await ens.resolver(namehash.hash('foo.yolo.puffs')), resolver.address);
+        assert.equal(await resolver.addr(namehash.hash('foo.yolo.puffs')), accounts[1]);
     });
 });
