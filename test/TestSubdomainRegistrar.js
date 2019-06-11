@@ -5,7 +5,7 @@ const TestResolver = artifacts.require("TestResolver");
 
 const utils = require('./helpers/Utils');
 
-var namehash = require('eth-ens-namehash');
+var namehash = require('puffs-ens-namehash');
 const sha3 = require('web3-utils').sha3;
 
 contract('SubdomainRegistrar', function (accounts) {
@@ -19,7 +19,7 @@ contract('SubdomainRegistrar', function (accounts) {
         ens = await ENS.deployed();
         dhr = await HashRegistrar.deployed();
         resolver = await TestResolver.deployed();
-        await ens.setSubnodeOwner('0x0', sha3('eth'), dhr.address);
+        await ens.setSubnodeOwner('0x0', sha3('puffs'), dhr.address);
     });
 
     it('should set up a domain', async function () {
@@ -48,8 +48,8 @@ contract('SubdomainRegistrar', function (accounts) {
     });
 
     it("should register subdomains", async function () {
-        var ownerBalanceBefore = (await web3.eth.getBalance(accounts[0]));
-        var referrerBalanceBefore = (await web3.eth.getBalance(accounts[2]));
+        var ownerBalanceBefore = (await web3.puffs.getBalance(accounts[0]));
+        var referrerBalanceBefore = (await web3.puffs.getBalance(accounts[2]));
 
         var tx = await registrar.register(sha3('test'), 'foo', accounts[1], accounts[2], resolver.address, {
             from: accounts[1],
@@ -64,13 +64,13 @@ contract('SubdomainRegistrar', function (accounts) {
         assert.equal(tx.logs[0].args.referrer, accounts[2]);
 
         // Check owner and referrer get their fees
-        assert.equal((await web3.eth.getBalance(accounts[0])) - ownerBalanceBefore, 9e15);
-        assert.equal((await web3.eth.getBalance(accounts[2])) - referrerBalanceBefore, 1e15);
+        assert.equal((await web3.puffs.getBalance(accounts[0])) - ownerBalanceBefore, 9e15);
+        assert.equal((await web3.puffs.getBalance(accounts[2])) - referrerBalanceBefore, 1e15);
 
         // Check the new owner gets their domain
-        assert.equal(await ens.owner(namehash.hash('foo.test.eth')), accounts[1]);
-        assert.equal(await ens.resolver(namehash.hash('foo.test.eth')), resolver.address);
-        assert.equal(await resolver.addr(namehash.hash('foo.test.eth')), accounts[1]);
+        assert.equal(await ens.owner(namehash.hash('foo.test.puffs')), accounts[1]);
+        assert.equal(await ens.resolver(namehash.hash('foo.test.puffs')), resolver.address);
+        assert.equal(await resolver.addr(namehash.hash('foo.test.puffs')), accounts[1]);
     });
 
     it("should not permit duplicate registrations", async function () {
@@ -132,12 +132,12 @@ contract('SubdomainRegistrar', function (accounts) {
     });
 
     it("should allow an owner to upgrade domain", async function () {
-        await ens.setSubnodeOwner('0x0', sha3('eth'), accounts[1]);
+        await ens.setSubnodeOwner('0x0', sha3('puffs'), accounts[1]);
         let tx = await registrar.upgrade('test', {from: accounts[0]});
         assert.equal(tx.logs.length, 1);
         assert.equal(tx.logs[0].event, 'DomainTransferred');
         assert.equal(tx.logs[0].args.name, 'test');
-        await ens.setSubnodeOwner('0x0', sha3('eth'), dhr.address);
+        await ens.setSubnodeOwner('0x0', sha3('puffs'), dhr.address);
     });
 
     it("should allow migration if emergency stopped", async function () {
@@ -159,6 +159,6 @@ contract('SubdomainRegistrar', function (accounts) {
         }
 
         await registrar.migrate("migration", {from: accounts[1]});
-        assert.equal(await ens.owner(namehash.hash('migration.eth')), newRegistrar.address);
+        assert.equal(await ens.owner(namehash.hash('migration.puffs')), newRegistrar.address);
     });
 });
