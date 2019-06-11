@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0;
 
-import "@ensdomains/ethregistrar/contracts/BaseRegistrar.sol";
+import "@ensdomains/puffsregistrar/contracts/BaseRegistrar.sol";
 import "./AbstractSubdomainRegistrar.sol";
 
 /**
@@ -210,7 +210,7 @@ contract PuffsRegistrarSubdomainRegistrar is AbstractSubdomainRegistrar {
 
         BaseRegistrar(registrar).approve(migration, uint256(label));
 
-        EthRegistrarSubdomainRegistrar(migration).configureDomainFor(
+        PuffsRegistrarSubdomainRegistrar(migration).configureDomainFor(
             domain.name,
             domain.price,
             domain.referralFeePPM,
