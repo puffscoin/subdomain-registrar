@@ -6810,7 +6810,7 @@
                                     "src": "7360:6:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                                      "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                                      "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                                     }
                                   },
                                   "id": 752,
@@ -7092,7 +7092,7 @@
                                 "src": "7557:6:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                                  "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                                  "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                                 }
                               },
                               "id": 776,
@@ -7516,7 +7516,7 @@
                           "src": "7888:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 810,
@@ -8238,7 +8238,7 @@
                       "storageLocation": "storage",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                        "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                        "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                       },
                       "typeName": {
                         "contractScope": null,
@@ -8249,7 +8249,7 @@
                         "src": "8438:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                         }
                       },
                       "value": null,
@@ -8269,7 +8269,7 @@
                       "src": "8462:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                        "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain storage ref)"
+                        "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain storage ref)"
                       }
                     },
                     "id": 862,
@@ -8294,7 +8294,7 @@
                     "src": "8462:14:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Domain_$306_storage",
-                      "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                      "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -8477,7 +8477,7 @@
                           "src": "8631:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 879,
@@ -8506,7 +8506,7 @@
                           "src": "8656:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 881,
@@ -8535,7 +8535,7 @@
                           "src": "8682:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 883,
@@ -8564,7 +8564,7 @@
                           "src": "8717:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 885,
@@ -8686,14 +8686,14 @@
                             }
                           ],
                           "id": 874,
-                          "name": "EthRegistrarSubdomainRegistrar",
+                          "name": "PuffsRegistrarSubdomainRegistrar",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 914,
                           "src": "8557:30:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_EthRegistrarSubdomainRegistrar_$914_$",
-                            "typeString": "type(contract EthRegistrarSubdomainRegistrar)"
+                            "typeIdentifier": "PuffsRegistrarSubdomainRegistrar",
+                            "typeString": "type(contract PuffsRegistrarSubdomainRegistrar)"
                           }
                         },
                         "id": 876,
@@ -8706,8 +8706,8 @@
                         "nodeType": "FunctionCall",
                         "src": "8557:41:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EthRegistrarSubdomainRegistrar_$914",
-                          "typeString": "contract EthRegistrarSubdomainRegistrar"
+                          "typeIdentifier": "t_contract$_PuffsRegistrarSubdomainRegistrar_$914",
+                          "typeString": "contract PuffsRegistrarSubdomainRegistrar"
                         }
                       },
                       "id": 877,
@@ -8766,7 +8766,7 @@
                         "src": "8783:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                          "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain storage ref)"
+                          "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain storage ref)"
                         }
                       },
                       "id": 893,
@@ -8791,7 +8791,7 @@
                       "src": "8783:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Domain_$306_storage",
-                        "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                        "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                       }
                     },
                     "typeDescriptions": {
@@ -9168,9 +9168,9 @@
     "src": "0:8960:1"
   },
   "legacyAST": {
-    "absolutePath": "/home/user/Dropbox/projects/subdomain-registrar/contracts/EthRegistrarSubdomainRegistrar.sol",
+    "absolutePath": "/home/user/Dropbox/projects/subdomain-registrar/contracts/PuffsRegistrarSubdomainRegistrar.sol",
     "exportedSymbols": {
-      "EthRegistrarSubdomainRegistrar": [
+      "PuffsRegistrarSubdomainRegistrar": [
         914
       ]
     },
@@ -9189,8 +9189,8 @@
         "src": "0:23:1"
       },
       {
-        "absolutePath": "@ensdomains/ethregistrar/contracts/BaseRegistrar.sol",
-        "file": "@ensdomains/ethregistrar/contracts/BaseRegistrar.sol",
+        "absolutePath": "@ensdomains/puffsregistrar/contracts/BaseRegistrar.sol",
+        "file": "@ensdomains/puffsregistrar/contracts/BaseRegistrar.sol",
         "id": 294,
         "nodeType": "ImportDirective",
         "scope": 915,
@@ -9244,11 +9244,11 @@
           291,
           1056
         ],
-        "name": "EthRegistrarSubdomainRegistrar",
+        "name": "PuffsRegistrarSubdomainRegistrar",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "canonicalName": "EthRegistrarSubdomainRegistrar.Domain",
+            "canonicalName": "PuffsRegistrarSubdomainRegistrar.Domain",
             "id": 306,
             "members": [
               {
@@ -9374,7 +9374,7 @@
             "storageLocation": "default",
             "typeDescriptions": {
               "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-              "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain)"
+              "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain)"
             },
             "typeName": {
               "id": 309,
@@ -9392,7 +9392,7 @@
               "src": "1705:27:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain)"
+                "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain)"
               },
               "valueType": {
                 "contractScope": null,
@@ -9403,7 +9403,7 @@
                 "src": "1725:6:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                  "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                  "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                 }
               }
             },
@@ -9537,7 +9537,7 @@
                           "src": "2365:7:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                            "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain storage ref)"
+                            "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain storage ref)"
                           }
                         },
                         "id": 328,
@@ -9562,7 +9562,7 @@
                         "src": "2365:14:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                         }
                       },
                       "id": 329,
@@ -9667,7 +9667,7 @@
                               "src": "2424:7:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                                "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain storage ref)"
+                                "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain storage ref)"
                               }
                             },
                             "id": 336,
@@ -9692,7 +9692,7 @@
                             "src": "2424:14:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Domain_$306_storage",
-                              "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                              "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                             }
                           },
                           "id": 337,
@@ -10104,7 +10104,7 @@
                             "src": "2932:7:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                              "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain storage ref)"
+                              "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain storage ref)"
                             }
                           },
                           "id": 377,
@@ -10129,7 +10129,7 @@
                           "src": "2932:14:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                           }
                         },
                         "id": 378,
@@ -10226,7 +10226,7 @@
                           "src": "2973:7:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                            "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain storage ref)"
+                            "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain storage ref)"
                           }
                         },
                         "id": 384,
@@ -10251,7 +10251,7 @@
                         "src": "2973:14:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                         }
                       },
                       "id": 385,
@@ -10627,7 +10627,7 @@
                       "storageLocation": "storage",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                        "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                        "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                       },
                       "typeName": {
                         "contractScope": null,
@@ -10638,7 +10638,7 @@
                         "src": "3793:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                         }
                       },
                       "value": null,
@@ -10658,7 +10658,7 @@
                       "src": "3817:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                        "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain storage ref)"
+                        "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain storage ref)"
                       }
                     },
                     "id": 422,
@@ -10683,7 +10683,7 @@
                     "src": "3817:14:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Domain_$306_storage",
-                      "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                      "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -10854,16 +10854,16 @@
                           "referencedDeclaration": 5279,
                           "src": "3906:4:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_EthRegistrarSubdomainRegistrar_$914",
-                            "typeString": "contract EthRegistrarSubdomainRegistrar"
+                            "typeIdentifier": "t_contract$_PuffsRegistrarSubdomainRegistrar_$914",
+                            "typeString": "contract PuffsRegistrarSubdomainRegistrar"
                           }
                         }
                       ],
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_EthRegistrarSubdomainRegistrar_$914",
-                            "typeString": "contract EthRegistrarSubdomainRegistrar"
+                            "typeIdentifier": "t_contract$_PuffsRegistrarSubdomainRegistrar_$914",
+                            "typeString": "contract PuffsRegistrarSubdomainRegistrar"
                           }
                         ],
                         "id": 432,
@@ -10953,16 +10953,16 @@
                                   "referencedDeclaration": 5279,
                                   "src": "3985:4:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_EthRegistrarSubdomainRegistrar_$914",
-                                    "typeString": "contract EthRegistrarSubdomainRegistrar"
+                                    "typeIdentifier": "t_contract$_PuffsRegistrarSubdomainRegistrar_$914",
+                                    "typeString": "contract PuffsRegistrarSubdomainRegistrar"
                                   }
                                 }
                               ],
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_contract$_EthRegistrarSubdomainRegistrar_$914",
-                                    "typeString": "contract EthRegistrarSubdomainRegistrar"
+                                    "typeIdentifier": "t_contract$_PuffsRegistrarSubdomainRegistrar_$914",
+                                    "typeString": "contract PuffsRegistrarSubdomainRegistrar"
                                   }
                                 ],
                                 "id": 442,
@@ -11207,16 +11207,16 @@
                                   "referencedDeclaration": 5279,
                                   "src": "4078:4:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_EthRegistrarSubdomainRegistrar_$914",
-                                    "typeString": "contract EthRegistrarSubdomainRegistrar"
+                                    "typeIdentifier": "t_contract$_PuffsRegistrarSubdomainRegistrar_$914",
+                                    "typeString": "contract PuffsRegistrarSubdomainRegistrar"
                                   }
                                 }
                               ],
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_contract$_EthRegistrarSubdomainRegistrar_$914",
-                                    "typeString": "contract EthRegistrarSubdomainRegistrar"
+                                    "typeIdentifier": "t_contract$_PuffsRegistrarSubdomainRegistrar_$914",
+                                    "typeString": "contract PuffsRegistrarSubdomainRegistrar"
                                   }
                                 ],
                                 "id": 457,
@@ -11366,7 +11366,7 @@
                         "src": "4109:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                         }
                       },
                       "id": 465,
@@ -11433,7 +11433,7 @@
                               "src": "4147:6:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                                "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                                "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                               }
                             },
                             "id": 470,
@@ -11508,7 +11508,7 @@
                                 "src": "4209:6:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                                  "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                                  "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                                 }
                               },
                               "id": 479,
@@ -11643,7 +11643,7 @@
                               "src": "4274:6:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                                "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                                "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                               }
                             },
                             "id": 486,
@@ -11708,7 +11708,7 @@
                         "src": "4313:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                         }
                       },
                       "id": 494,
@@ -11770,7 +11770,7 @@
                         "src": "4343:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                         }
                       },
                       "id": 500,
@@ -12279,7 +12279,7 @@
                       "storageLocation": "storage",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                        "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                        "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                       },
                       "typeName": {
                         "contractScope": null,
@@ -12290,7 +12290,7 @@
                         "src": "4713:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                         }
                       },
                       "value": null,
@@ -12310,7 +12310,7 @@
                       "src": "4737:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                        "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain storage ref)"
+                        "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain storage ref)"
                       }
                     },
                     "id": 533,
@@ -12335,7 +12335,7 @@
                     "src": "4737:14:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Domain_$306_storage",
-                      "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                      "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -12415,7 +12415,7 @@
                         "src": "4798:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                         }
                       },
                       "id": 541,
@@ -12482,7 +12482,7 @@
                         "src": "4824:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                         }
                       },
                       "id": 547,
@@ -12549,7 +12549,7 @@
                         "src": "4850:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                         }
                       },
                       "id": 553,
@@ -13410,7 +13410,7 @@
                       "storageLocation": "storage",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                        "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                        "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                       },
                       "typeName": {
                         "contractScope": null,
@@ -13421,7 +13421,7 @@
                         "src": "5794:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                         }
                       },
                       "value": null,
@@ -13441,7 +13441,7 @@
                       "src": "5816:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                        "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain storage ref)"
+                        "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain storage ref)"
                       }
                     },
                     "id": 617,
@@ -13466,7 +13466,7 @@
                     "src": "5816:14:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Domain_$306_storage",
-                      "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                      "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -13488,7 +13488,7 @@
                           "src": "5848:4:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 620,
@@ -13517,7 +13517,7 @@
                           "src": "5859:4:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 622,
@@ -13564,7 +13564,7 @@
                           "src": "5874:4:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 625,
@@ -14423,7 +14423,7 @@
                       "storageLocation": "storage",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                        "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                        "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                       },
                       "typeName": {
                         "contractScope": null,
@@ -14434,7 +14434,7 @@
                         "src": "6766:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                         }
                       },
                       "value": null,
@@ -14454,7 +14454,7 @@
                       "src": "6790:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                        "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain storage ref)"
+                        "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain storage ref)"
                       }
                     },
                     "id": 687,
@@ -14479,7 +14479,7 @@
                     "src": "6790:14:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Domain_$306_storage",
-                      "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                      "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -14518,7 +14518,7 @@
                                     "src": "6892:6:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                                      "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                                      "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                                     }
                                   },
                                   "id": 693,
@@ -14722,7 +14722,7 @@
                             "src": "6985:6:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                              "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                              "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                             }
                           },
                           "id": 704,
@@ -14840,7 +14840,7 @@
                         "src": "7056:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                         }
                       },
                       "id": 711,
@@ -14930,7 +14930,7 @@
                                   "src": "7116:6:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                                    "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                                    "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                                   }
                                 },
                                 "id": 721,
@@ -15070,7 +15070,7 @@
                       "src": "7199:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                        "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                        "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                       }
                     },
                     "id": 730,
@@ -15136,7 +15136,7 @@
                             "src": "7225:6:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                              "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                              "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                             }
                           },
                           "id": 733,
@@ -15315,7 +15315,7 @@
                           "src": "7294:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 744,
@@ -15423,7 +15423,7 @@
                                     "src": "7345:6:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                                      "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                                      "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                                     }
                                   },
                                   "id": 750,
@@ -15454,7 +15454,7 @@
                                     "src": "7360:6:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                                      "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                                      "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                                     }
                                   },
                                   "id": 752,
@@ -15736,7 +15736,7 @@
                                 "src": "7557:6:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                                  "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                                  "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                                 }
                               },
                               "id": 776,
@@ -16160,7 +16160,7 @@
                           "src": "7888:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 810,
@@ -16882,7 +16882,7 @@
                       "storageLocation": "storage",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                        "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                        "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                       },
                       "typeName": {
                         "contractScope": null,
@@ -16893,7 +16893,7 @@
                         "src": "8438:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                          "typeString": "struct EthRegistrarSubdomainRegistrar.Domain"
+                          "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain"
                         }
                       },
                       "value": null,
@@ -16938,7 +16938,7 @@
                     "src": "8462:14:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Domain_$306_storage",
-                      "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                      "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -17121,7 +17121,7 @@
                           "src": "8631:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 879,
@@ -17150,7 +17150,7 @@
                           "src": "8656:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 881,
@@ -17179,7 +17179,7 @@
                           "src": "8682:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 883,
@@ -17208,7 +17208,7 @@
                           "src": "8717:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Domain_$306_storage_ptr",
-                            "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage pointer"
+                            "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage pointer"
                           }
                         },
                         "id": 885,
@@ -17336,8 +17336,8 @@
                           "referencedDeclaration": 914,
                           "src": "8557:30:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_EthRegistrarSubdomainRegistrar_$914_$",
-                            "typeString": "type(contract EthRegistrarSubdomainRegistrar)"
+                            "typeIdentifier": "t_type$_t_contract$_PuffsRegistrarSubdomainRegistrar_$914_$",
+                            "typeString": "type(contract PuffsRegistrarSubdomainRegistrar)"
                           }
                         },
                         "id": 876,
@@ -17350,8 +17350,8 @@
                         "nodeType": "FunctionCall",
                         "src": "8557:41:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EthRegistrarSubdomainRegistrar_$914",
-                          "typeString": "contract EthRegistrarSubdomainRegistrar"
+                          "typeIdentifier": "t_contract$_PuffsRegistrarSubdomainRegistrar_$914",
+                          "typeString": "contract PuffsRegistrarSubdomainRegistrar"
                         }
                       },
                       "id": 877,
@@ -17410,7 +17410,7 @@
                         "src": "8783:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Domain_$306_storage_$",
-                          "typeString": "mapping(bytes32 => struct EthRegistrarSubdomainRegistrar.Domain storage ref)"
+                          "typeString": "mapping(bytes32 => struct PuffsRegistrarSubdomainRegistrar.Domain storage ref)"
                         }
                       },
                       "id": 893,
@@ -17435,7 +17435,7 @@
                       "src": "8783:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Domain_$306_storage",
-                        "typeString": "struct EthRegistrarSubdomainRegistrar.Domain storage ref"
+                        "typeString": "struct PuffsRegistrarSubdomainRegistrar.Domain storage ref"
                       }
                     },
                     "typeDescriptions": {
